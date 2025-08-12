@@ -1,1 +1,57 @@
 @import "tailwindcss";
+
+/* 
+  Caudex Font 
+*/
+.caudex-regular {
+  font-family: "Caudex", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.caudex-bold {
+  font-family: "Caudex", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.caudex-regular-italic {
+  font-family: "Caudex", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.caudex-bold-italic {
+  font-family: "Caudex", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* 
+  Soothing gradient applied to the body element to cover the entire page
+*/
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  /* Apply Caudex font to the entire site as default */
+  font-family: "Caudex", serif;
+}
+
+body {
+  background: linear-gradient(135deg, #B8D8BA 0%, #D9DBBC 35%, #FCDDBC 65%, #EF959D 100%);
+  background-size: 200% 200%;
+  animation: gradient 12s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
