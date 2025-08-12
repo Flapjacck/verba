@@ -27,8 +27,38 @@
   font-style: italic;
 }
 
+/* Loading screen styles */
+html.loading-active {
+  overflow: hidden !important;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+}
+
+.loading-bg {
+  background: linear-gradient(135deg, #B8D8BA 0%, #D9DBBC 35%, #FCDDBC 65%, #EF959D 100%);
+  background-size: 200% 200%;
+  animation: gradient 12s ease infinite;
+}
+
+/* verba text colour*/
+.text-verba-green {
+  color: #87bd8a;
+}
+
+/* Fade out animations for loading screen */
+.loading-fade-out {
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.text-fade-out {
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
 /* 
-  Soothing gradient applied to the body element to cover the entire page
+  bg gradient applied to the body element to cover the entire page
 */
 html, body {
   height: 100%;
